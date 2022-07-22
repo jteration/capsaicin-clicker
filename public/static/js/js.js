@@ -5,60 +5,60 @@ particlesJS.load('particles-js', '/particles.json', function() {
 });
 
 //Chat
-const socket = io();
-
-$('.send-button').click(function (event) {
-  event.preventDefault();
-
-  let msg = $('#message-box').val();
-
-  if (msg.trim() === '') {
-    return null
-  }
-
-  const time = moment().tz('America/Chicago').format('h:mm:ss a');
-
-  if(JSON.parse(window.localStorage.payload).helpers.purchasedHelpers.Madagascar >= 1) {
-    msg = time + ' - 🇲🇬 ' + window.localStorage.user + ' - ' + msg;
-  } else {
-    msg = time + ' - ' + window.localStorage.user + ' - ' + msg;
-  }
-
-  const chatPackage = {
-    username: window.localStorage.user,
-    content: msg,
-  };
-  if((window.localStorage.user) === undefined){
-    alert('You need an account to chat')
-  } else {
-    socket.emit('chat', chatPackage);
-
-    $('.messages').append($('<p>').text(msg));
-  }
-
-  $('#message-box').val('');
-  return false;
-});
+// const socket = io();
 
 // $('.send-button').click(function (event) {
 //   event.preventDefault();
+
+//   let msg = $('#message-box').val();
+
+//   if (msg.trim() === '') {
+//     return null
+//   }
+
+//   const time = moment().tz('America/Chicago').format('h:mm:ss a');
+
+//   if(JSON.parse(window.localStorage.payload).helpers.purchasedHelpers.Madagascar >= 1) {
+//     msg = time + ' - 🇲🇬 ' + window.localStorage.user + ' - ' + msg;
+//   } else {
+//     msg = time + ' - ' + window.localStorage.user + ' - ' + msg;
+//   }
+
+//   const chatPackage = {
+//     username: window.localStorage.user,
+//     content: msg,
+//   };
+//   if((window.localStorage.user) === undefined){
+//     alert('You need an account to chat')
+//   } else {
+//     socket.emit('chat', chatPackage);
+
+//     $('.messages').append($('<p>').text(msg));
+//   }
+
+//   $('#message-box').val('');
+//   return false;
 // });
 
-const ban = function(user) {
+// // $('.send-button').click(function (event) {
+// //   event.preventDefault();
+// // });
 
-};
+// const ban = function(user) {
 
-socket.on('chat', function (msg) {
-  if(window.localStorage.user === 'Admin') {
-    const message = new $('<p/>', {text: msg.content});
-    const banButton = new $('<button />', {class: "button ban-btn", text: 'X'});
-    banButton.attr('id', msg.user);
-    message.append(banButton);
-    $('.messages').append(message);
-  } else {
-    $('.messages').append($('<p>', { text: msg.content, id: msg.user}));
-  }
-});
+// };
+
+// socket.on('chat', function (msg) {
+//   if(window.localStorage.user === 'Admin') {
+//     const message = new $('<p/>', {text: msg.content});
+//     const banButton = new $('<button />', {class: "button ban-btn", text: 'X'});
+//     banButton.attr('id', msg.user);
+//     message.append(banButton);
+//     $('.messages').append(message);
+//   } else {
+//     $('.messages').append($('<p>', { text: msg.content, id: msg.user}));
+//   }
+// });
 
 //login-logout
 $(() => {

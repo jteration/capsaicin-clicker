@@ -2,6 +2,8 @@
 
 A clicker game I built as the final project of my coding school. Made with React and Redux. It was once deployed on AWS, and briefly had thousands of active players after advertising its existence on Reddit. A couple of days before the project was due, I realized I had missed a requirement of talking to a server. I rushed in a chat feature, so that users could talk to each other while playing.
 
+Deployed to https://jteration.github.io/capsaicin-clicker/
+
 Some tidbits -
 
 1. Most feedback from players was concerning the balance.

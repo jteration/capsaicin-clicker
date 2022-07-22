@@ -1,10 +1,12 @@
 {
   "name": "capsaicin-clicker",
   "version": "0.1.0",
+  "homepage": "https://jteration.github.io/capsaicin-clicker/",
   "private": true,
   "dependencies": {
     "axios": "0.27.2",
     "eslint-config-airbnb": "19.0.4",
+    "gh-pages": "4.0.0",
     "jquery": "3.6.0",
     "moment": "2.29.4",
     "moment-timezone": "0.5.34",
@@ -17,6 +19,8 @@
     "socket.io": "4.5.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
