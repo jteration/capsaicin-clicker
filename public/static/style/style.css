@@ -1,115 +1,117 @@
-html, body {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: #F7FFF9;
+html,
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: #f7fff9;
 }
 
 main {
-    min-height: 100vh;
-    display: flex;
-    position: relative;
-    min-width: 100vw;
-    z-index: 2;
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+	min-width: 100vw;
+	z-index: 2;
 }
 
 canvas {
-    display: block;
-    vertical-align: bottom;
-    position: absolute;
-    z-index: -1;
-    background-color: #F7FFF9;
+	display: block;
+	vertical-align: bottom;
+	position: absolute;
+	z-index: -1;
+	background-color: #f7fff9;
 }
 
 .particles-js-canvas-el {
-    width: 498px;
-    height: 300px;
+	width: 498px;
+	height: 300px;
 }
 
 #root {
-    min-height: 1495px;
-    min-width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	min-height: 1495px;
+	min-width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid-container {
-    padding: 0;
-    z-index: 3;
+	padding: 0;
+	z-index: 3;
 }
 
 .medium-3 {
-    width: 90%;
+	width: 90%;
 }
 
 .cell {
-
 }
 
 .card {
-    background: none;
+	background: none;
 }
 
-.card>:last-child button {
-    margin: 0;
+.card > :last-child button {
+	margin: 0;
 }
 
 .open-close-btn {
-    float: right;
-    margin: 0 5px 0 0;
+	float: right;
+	margin: 0 5px 0 0;
 }
 
 .ban-btn {
-    margin: 0;
-    padding: 0;
-    float: right;
+	margin: 0;
+	padding: 0;
+	float: right;
 }
 
 #message-box {
-    height: 40.47px;
-    width: 85%;
-    float: left;
-    margin-right: 0;
-    margin-bottom: 0;
-    background-color: #F7FFF9;
+	height: 40.47px;
+	width: 85%;
+	float: left;
+	margin-right: 0;
+	margin-bottom: 0;
+	background-color: #f7fff9;
 }
 
 .messages {
-    box-shadow: inset 0 0 2px #666;
+	box-shadow: inset 0 0 2px #666;
 }
 
 .messages p {
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-    margin-bottom: 0;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	margin-bottom: 0;
 }
 
 .messages > p:nth-child(even) {
-    background: RGBA(0, 0, 0, .066);
+	background: RGBA(0, 0, 0, 0.066);
 }
 
 .send-button {
-    width: 15%;
-    margin-bottom: 0;
-    float: right;
+	width: 15%;
+	margin-bottom: 0;
+	float: right;
 }
 
 button.button {
-    background-color: green;
+	background-color: green;
 }
 
 input.send-button {
-    background-color: green;
+	background-color: green;
 }
 
-.button:focus,.button:hover {
-    background-color: #d30001;
+.button:focus,
+.button:hover {
+	background-color: #d30001;
 }
 
 button.gold {
-    background-color: goldenrod;
+	background-color: goldenrod;
 }
 
-button.gold:focus,.button.gold:hover {
-    background-color: silver;
+button.gold:focus,
+.button.gold:hover {
+	background-color: silver;
 }
