@@ -17,3 +17,5 @@ You can spend peppers on pepper producing units
 You can spend heat on permanent upgrades
 
 Random events can provide some large boosts
+
+You can click on a button and then hold enter to rapidly click without injuring your hands
