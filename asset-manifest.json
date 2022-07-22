@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/capsaicin-clicker/static/js/main.d5ad70fb.js",
+    "main.js": "/capsaicin-clicker/static/js/main.b7ba9ffc.js",
     "index.html": "/capsaicin-clicker/index.html",
-    "main.d5ad70fb.js.map": "/capsaicin-clicker/static/js/main.d5ad70fb.js.map"
+    "main.b7ba9ffc.js.map": "/capsaicin-clicker/static/js/main.b7ba9ffc.js.map"
   },
   "entrypoints": [
-    "static/js/main.d5ad70fb.js"
+    "static/js/main.b7ba9ffc.js"
   ]
 }

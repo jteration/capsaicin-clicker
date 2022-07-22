@@ -1,7 +1,7 @@
 //Particles
 
 particlesJS.load('particles-js', './static/js/particles.json', function() {
-  console.log('');
+  console.log('Particles loaded');
 });
 
 //Chat
