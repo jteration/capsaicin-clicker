@@ -27,8 +27,6 @@ import { bindActionCreators } from 'redux';
 import Changelog from '../components/Changelog';
 import numeral from 'numeral';
 import axios from 'axios';
-import moment from 'moment';
-import tz from 'moment-timezone';
 
 class MainGame extends Component {
   constructor(props) {
@@ -192,8 +190,8 @@ class MainGame extends Component {
         <div className="card">
           <h3>Employed Helpers</h3>
           {Object.values(game.helpers.purchasedHelpers).map((value, index) => {
-            const name = Object.keys(game.helpers.purchasedHelpers)
-              [index].split('_')
+            const name = Object.keys(game.helpers.purchasedHelpers)[index]
+              .split('_')
               .join(' ');
             if (value === 0) {
               return null;
@@ -243,16 +241,6 @@ class MainGame extends Component {
     const plantGains = numeral(this.props.game.plantGains).format('0.00a');
     const heatGains = numeral(this.props.game.heatGains).format('0.00a');
 
-    function renderAscendButton(heat) {
-      if (heat >= 1000000000000000) {
-        return (
-          <button className="button column medium-6 gold" type="button">
-            Ascend
-          </button>
-        );
-      }
-    }
-
     return (
       <div className="column medium-3">
         <div className="card">
@@ -265,9 +253,6 @@ class MainGame extends Component {
           <button className="button" type="button" onClick={() => this.onClick(this.props.game)}>
             Click Me
           </button>
-          {/* <div className="grid-x"> */}
-          {/* {renderAscendButton(this.props.game.capsaicin)} */}
-          {/* </div> */}
         </div>
       </div>
     );
